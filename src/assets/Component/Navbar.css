@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 4%;
+
+    background:rgba(5,8,22,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+    z-index:1000;
+
+}
+
+/* ================= LOGO ================= */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+}
+
+.logo img{
+
+    width:50px;
+
+    height:50px;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+}
+
+.logo img:hover{
+
+    transform:rotate(-10deg) scale(1.1);
+
+}
+
+.logo h2{
+
+    color:#fff;
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#00d4ff;
+
+}
+
+/* ================= MENU ================= */
+
+nav{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:45px;
+
+    list-style:none;
+
+}
+
+nav ul li a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+/* Hover */
+
+nav ul li a:hover{
+
+    color:#00d4ff;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    background:#00d4ff;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/* ================= RESUME BUTTON ================= */
+
+.resume-btn{
+
+    padding:14px 34px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-weight:600;
+
+    background:linear-gradient(90deg,#00d4ff,#8b5cf6);
+
+    transition:.35s;
+
+}
+
+.resume-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 25px #00d4ff;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        width:100%;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .logo h2{
+
+        font-size:28px;
+
+    }
+
+}
