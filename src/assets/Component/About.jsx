@@ -77,7 +77,7 @@ function About() {
 
           </div>
 
-          <a href="/arun_resume.pdf" download className="about-btn">
+          <a href="/images/resume.pdf" download className="about-btn">
             <FaDownload />
             <span>Download Resume</span>
           </a>

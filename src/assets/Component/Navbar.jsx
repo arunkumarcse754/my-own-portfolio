@@ -34,7 +34,7 @@ function Navbar() {
 
       </nav>
 
-      <a href="/resume.pdf" download className="resume-btn">
+      <a href="/images/resume.pdf" download className="resume-btn">
         Resume
       </a>
 

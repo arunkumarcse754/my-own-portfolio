@@ -28,11 +28,11 @@ function Hero() {
 
         <div className="hero-buttons">
 
-       <a href="arunkumarcse754@gmail.com" className="btn-primary">
+       <a href="#contact" className="btn-primary">
     Hire Me
 </a>
 
-          <a href="/arun_resume.pdf" download className="btn-secondary">
+          <a href="/images/resume.pdf" download className="btn-secondary">
             <FaDownload />
             <span>Download CV</span>
           </a>
